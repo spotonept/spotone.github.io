@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!--cabeçalho-->    
+    <header id="cabecalho" class="grupo">
+        <img src="imagens/logo_empresa.png" alt="Logo da empresa">
+        <nav id="menu-principal">
+            <ul class="grupo">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="empresa.html">Empresa</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a class="ativo" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--banner-->
+    <div id="foto-principal"></div>
+
+    <!--conteudo principal formulario-->
+    <div id="conteudo">
+        <section id="conteudo-principal">
+            <h1>Contacto</h1>
+            <p>Entre em contacto conosco:</p>
+
+            <form action="#" method="post">
+                <fieldset id="identificacao">
+                    <div id="campo_nome">
+                        <label for="nome">Nome <abbr title="preenchimento obrigatório">*</abbr>:</label><br>
+                        <input type="text" name="nome" id="nome" size="20" maxlength="80"/>
+                    </div>
+
+                    <div id="campo_empresa">
+                        <label for="empresa">Empresa: </label><br>
+                        <input type="text" name="tempresa" id="empresa" size="20" maxlength="40"/>
+                    </div>
+                    
+                    <div id="campo_email">
+                        <label for="email">E-mail <abbr title="preenchimento obrigatório">*</abbr>: </label><br>
+                        <input type="email" name="temail" id="cemail"/>
+                    </div>
+
+                    <div id="campo_telefone">
+                        <label for="tlf">Telefone <abbr title="preenchimento obrigatório">*</abbr>: </label><br>
+                        <input type="number" name="tlf" id="tlf"/>
+                    </div>
+
+                    <div id="campo_departamento">
+                        <fieldset>
+                            <legend>Departamento</legend>
+
+                            <input type="radio" name="tdepartamento" id="ccomercial" value="Comercial"/>
+                            <label> Comercial</label>
+
+                            <input type="radio" name="tdepartamento" id="cfinanceiro" value="Financeiro"/>
+                            <label> Financeiro</label>
+
+                            <input type="radio" name="tdepartamento" id="csuporte" value="Suporte"/>
+                            <label> Suporte</label>
+                        </fieldset>
+                    </div>
+
+                    <div id="campo_assuntomensagem">
+                        <label for="cassunto">Assunto <abbr title="preenchimento obrigatório">*</abbr>: </label><br>
+                        <select name="tassunto" id="cassunto">
+                            <option>--Selecione--</option> 
+                            <option value="orcamento">Orçamento</option>
+                            <option value="duvidas">Dúvidas</option>
+                            <option value="solicitacoes">Solicitações</option>
+                            <option value="reclamacoes">Reclamações</option>
+                            <option value="outro">Outro</option>
+                        </select>
+
+                        <p id="cmensagem">
+                            <label for="cmensagem">Mensagem<abbr title="preenchimento obrigatório">*</abbr>: </label><br>    
+                            <textarea name="tmensagem" id="cmensagem" cols="54" rows="5"></textarea></p>
+                        </p>
+                    </div>
+
+                    <button type="submit" id="botaoenviar">Enviar Mensagem</button>
+                </fieldset>
+            </form>
+        </section>    
+    </div>
+
+    <!--rodape-->
+    <footer id="rodape">
+        <p id="contacto">António Cardoso, nº1</p>
+            <p id="endereco">
+                Rua do Endereço, 123, Bairro<br>
+                253 000 111
+            </p>
+            <p id="copyright">António Cardoso&copy; “J+D UX/UI 01-24. Todos os direitos reservados</p>
+    </footer>
+</body>
+</html> 
+

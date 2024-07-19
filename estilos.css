@@ -1,0 +1,394 @@
+body{
+    background-color: #eeeeee;
+    font-size: 16px; /*define o tamanho da fonte na pagina*/
+
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif; /*define familia sem serifa*/
+}
+
+p{  /*define paragrafos*/
+    font-size: 1em;
+    margin-bottom: 1.5em;
+}
+
+/*header---------------------------------------------------------------*/
+#cabecalho{
+    max-width: 60em; /*dimensoes*/
+    min-width: 37.5em;
+    margin: 0 auto;
+    position: relative; /*posicionamento na pagina*/
+    background-color: #eeeeee; /*cor de fundo*/
+}
+
+#menu-principal {
+    position: absolute; /*posicionamento do menu*/
+    top: 16px;
+    right: 0px; /*alinha à direita*/
+    text-decoration: none;
+}
+
+#menu-principal li{
+display:inline   /*coloca elementos da lista numa alinhados*/
+}
+
+#menu-principal a{ /*definir ancoras do menu*/
+    display: block;
+    float: left;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    margin-left: 32px;
+}
+
+#menu-principal a:hover{ /*quando rato passa na ancora*/
+    color: blue;
+}
+
+#menu-principal a.ativo{ /*quando selecionada*/
+    color: blue;
+    font-weight: bold;
+}
+/* fim header -------------------------------------------------------*/
+
+/*banner-------------------------------------------------------------*/
+#foto-principal { /*carrega e define o banner*/
+    height: 200px;
+    background: url(imagens/foto_principal.jpg) no-repeat center top;
+}
+/*fim banner ------------------------------------------------------*/
+
+/*conteudo da pagina-----------------------------------------------*/
+#conteudo { /*define o conteudo da pagina*/
+    max-width: 60em;
+    min-width: 37.5em;
+    margin: 0 auto;
+    padding-top: 1em;
+    background-color: #eeeeee;
+    
+}
+
+#conteudo h1{ /*define h1 do conteudo*/
+    margin-top: 0;
+}
+
+/*conteudo principal -----------------------------------------------*/
+#conteudo-principal{ /*define conteudo*/
+    float: left;
+    width: 64.5%;
+    /*background-color: inherit;*/
+}
+
+#conteudo-principal h1{
+    font-size: 2.25em;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+#conteudo-principal h2{
+    font-size: 1.75em;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+#conteudo-principal ul{
+    padding-inline-start: 1em;
+}
+
+#conteudo-principal li{
+    text-indent: 0;
+    padding-inline-start: 0;
+    margin: 0.5em 0;
+}
+
+.artigos{ /*define caracteristicas dos artigos*/
+    margin-top: 0;
+}
+/* fim do conteudo principal------------------------------*/
+
+/*conteudo secundario / sidebar --------------------------*/
+
+/*aside{
+    /*background-color: #eeeeee;
+}*/
+
+aside h1{ 
+    font-size: 1.5em;
+    padding: 10px;
+} 
+
+aside h2{
+    padding: 0px;
+    font-weight: 300;
+}
+
+aside p{
+    font-size: 0.875em;
+    padding: 10px;
+}
+
+aside a{
+    font-size: 18px;
+    color: white;
+    }    
+
+#conteudo-secundario {
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 1em;
+    float: right;
+    width: 30%;
+}
+
+
+#conteudo-secundario-sobre{
+    background-color: #0f599f;
+    padding: 0;
+    margin-top: 50px;
+    color: white;
+    margin-bottom: 1em;
+    float: right;
+    width: 30%;
+}
+
+#conteudo-secundario img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#conteudo-secundario figure{
+    margin: 0;
+    padding: 0;
+}
+
+#conteudo-secundario h2{
+    margin-top: 0;
+}
+
+.legenda{
+    margin: 0;
+    color: #FFF;
+    background: #808080;
+    font-style: italic;
+    text-align: center;
+    padding: 0.3em 0.6em;
+}
+
+#conteudo-secundario2{
+    float: right;
+    width: 29.166666%;
+    * {margin: 0;
+      padding: 0;
+    }
+}
+
+#conteudo-secundario2 img{
+    display: block;
+    border: 0;
+}
+
+#conteudo-secundario2 figure{
+    margin-top: 50px;
+}
+
+/* depoimentos ----------------------------------*/
+
+blockquote.depoimento {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    font-style: italic;
+}
+
+p.depoimento-autor {
+    margin: 1em 0;
+    padding: 0;
+    text-align: right;
+}
+
+/*fim conteudo secundario / sidebar ---------------------------------*/
+
+
+footer{
+    clear: both;
+    max-width: 60em;
+    min-width: 37.5em;
+    margin: 0 auto;
+    background-color: grey;
+    color: white;
+}
+
+#rodape{
+    clear: both;
+}
+
+#contacto{
+    float: left;
+    font-size: 16px;
+    margin: 12px;
+}
+
+#endereco{
+    float: right;
+    text-align: right;
+    font-size: 14px;
+    margin: 12px;
+}
+
+#copyright{
+    clear: both;
+    font-size: 11px;
+    display: block;
+    margin: 12px;
+    padding: 1em 1em 1em 0%;
+}
+
+article{
+    margin: 1em 0;
+}
+
+article h3{
+    margin: 0;
+    padding: 0;
+}
+
+/*tabela de serviços -------------------------------*/
+.tabela-servicos {
+border-spacing: 0;
+width: 100%;
+}
+
+.tabela-servicos caption {
+font-size: 24px;
+margin-bottom: 0.5em;
+text-align: left;
+}
+
+.tabela-servicos th {
+background: #0F599F;
+color: #FFF;
+font-weight: normal;
+text-align: center;
+}
+
+.tabela-servicos th, .tabela-servicos td {
+border-bottom: 1px solid #CCC;
+font-size: 14px;
+padding: 0.3em;
+}
+
+.tabela-servicos .prazo-entrega {
+text-align: center;
+}
+
+.tabela-servicos .valor-servico {
+text-align: right;
+}
+/*------------------------------------------------*/ 
+
+/*formulário--------------------------------------
+.campo {
+margin-bottom: 0.75em;
+}
+.campo label {
+display: block;
+font-size: 1em;
+margin-bottom: 0.1em;
+}
+.campo abbr {
+color: #C00;
+font-weight: bold;
+}
+.campo input, .campo textarea, .campo select {
+width: 100%;
+border: 1px solid #CCC;
+font-size: 1em;
+padding: 0.1em 0;
+}
+.campo textarea {
+height: 10em;
+}
+label.checkbox {
+display: inline-block;
+margin-right: 1em;
+} 
+*/  
+    
+/*formulário--------------------------------------*/
+abbr{
+    color: red;
+}
+
+fieldset{
+    border: 0px;
+    padding-left: 0;
+}
+
+#identificacao label{
+    margin-bottom: 1em;
+}
+
+#identificacao input{
+    margin-bottom: 0.5em;
+}
+
+#identificacao button{
+    margin-bottom: 1em;
+}
+
+#campo_nome{
+    width: 50%;
+    float: left;
+}
+
+#campo_empresa{
+    width: 50%;
+    float: left;
+}
+
+#campo_email{
+    clear: both;
+}
+
+#campo_telefone{
+    float: left;
+    width: 50%;
+}
+
+#campo_departamento{
+    float: left;
+}
+
+#campo_departamento fieldset{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#campo_assuntomensagem{
+    clear: both;
+}
+
+#cmensagem textarea{
+    height: 10em;
+}
+
+button{
+    font-weight: bold;
+    border: 0;
+    background-color: #0F599F;
+    padding: 0.5em;
+    font-size: 0,5;
+    color: white;
+}
+
+button:hover{
+    background-color: #0084ff;
+}
+
+label, select, .submit {
+    cursor: pointer;
+}
+   
+/*---------------------------------------------------*/ 
+
